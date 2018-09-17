@@ -21,3 +21,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ct.device.model=XMP-2016030
+
+# ADB
+    ro.adb.secure=0
+    persist.service.debuggable=1
+    persist.service.adb.enable=1
+    persist.sys.usb.config=mtp,adb
